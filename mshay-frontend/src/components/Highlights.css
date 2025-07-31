@@ -1,0 +1,173 @@
+.highlights-section {
+  width: 90%;
+  max-width: 1400px;
+  margin: 3rem auto;
+  font-family: 'Inter', sans-serif; /* Assumes Inter font is imported elsewhere */
+}
+
+.highlights-title {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.highlights-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.highlights-tabs a {
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transform: translateY(1px);
+  transition: all 0.2s ease-in-out;
+}
+
+.highlights-tabs a:hover {
+  color: #111827;
+}
+
+.highlights-tabs a.active {
+  color: #3b82f6;
+  border-bottom-color: #3b82f6;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual Card Styling */
+.highlight-card {
+  background-color: #fff;
+}
+
+.card-media {
+  position: relative;
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1.1; /* Creates a consistent card shape */
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.highlight-card:hover .card-media img {
+  transform: scale(1.05);
+}
+
+.sale-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #ef4444;
+  color: white;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 99px;
+  z-index: 2;
+}
+
+.wishlist-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+
+.wishlist-btn:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+.card-options {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 2;
+  opacity: 0; /* Hidden by default */
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover .card-options {
+  opacity: 1; /* Revealed on hover */
+  transform: translateY(0);
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #fff;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #111827;
+  color: #fff;
+}
+
+.card-details {
+  padding: 1rem 0.25rem;
+}
+
+.product-title {
+  display: block;
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.product-title:hover {
+  color: #3b82f6;
+}
+
+.product-title .product-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.original-price {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-left: 0.5rem;
+  text-decoration: line-through;
+}

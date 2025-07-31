@@ -1,0 +1,22 @@
+.rating-view {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Space between stars and review count */
+  margin-left: 14px;
+}
+
+.stars {
+  display: flex;
+}
+
+/* Style for all star SVGs */
+.stars svg {
+  width: 20px;
+  height: 20px;
+  color: #ffc107; /* Gold color for stars */
+}
+
+.review-count {
+  font-size: 0.9rem;
+  color: #6c757d; /* A muted grey color */
+}

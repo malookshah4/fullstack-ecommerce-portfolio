@@ -1,0 +1,143 @@
+
+
+export const products = {
+    items: [
+      {
+        id: "prod_1x",
+        name: "iPhone 14 Pro",
+        price: { current: 999.00, original: 1099.00, currency: "USD" },
+        primaryImage: "https://cartzilla-react.createx.studio/_next/image?url=%2Fimg%2Fshop%2Felectronics%2F01.png&w=750&q=75",
+        rating: { averageScore: 4.8, numReviews: 23 },
+        features: [
+          { name: "Display", details: "6.1-inch Super Retina XDR" },
+          { name: "Chip", details: "A16 Bionic" },
+          { name: "Camera", details: "48MP Pro System" },
+        ],
+      },
+      {
+        id: "prod_2",
+        name: "Samsung Galaxy S23 Ultra",
+        price: { current: 1199.00, original: 1299.00, currency: "USD" },
+        primaryImage: "https://image-us.samsung.com/us/smartphones/galaxy-s24-ultra/images/galaxy-s24-ultra-highlights-titanium.jpg",
+        rating: { averageScore: 4.7, numReviews: 54 },
+        features: [
+          { name: "Display", details: "6.8-inch Dynamic AMOLED" },
+          { name: "Camera", details: "200MP Wide-angle" },
+          { name: "Special", details: "Built-in S Pen" },
+        ],
+      },
+      {
+        id: "prod_3",
+        name: "Google Pixel 8 Pro",
+        price: { current: 899.00, original: 899.00, currency: "USD" },
+        primaryImage: "https://cartzilla-react.createx.studio/_next/image?url=%2Fimg%2Fshop%2Felectronics%2F03.png&w=750&q=75",
+        rating: { averageScore: 4.6, numReviews: 75 },
+        features: [
+          { name: "AI", details: "Google AI Features" },
+          { name: "Camera", details: "Pro-level Camera System" },
+          { name: "Display", details: "Super Actua Display" },
+        ],
+      },
+      {
+        id: "prod_4",
+        name: "Sony WH-1000XM5 Headphones",
+        price: { current: 399.00, original: 449.00, currency: "USD" },
+        primaryImage: "https://cartzilla-react.createx.studio/_next/image?url=%2Fimg%2Fshop%2Felectronics%2F04.png&w=750&q=75",
+        rating: { averageScore: 4.9, numReviews: 21 },
+        features: [
+          { name: "Audio", details: "Industry Leading Noise Cancelation" },
+          { name: "Battery", details: "Up to 30-hour battery life" },
+          { name: "Comfort", details: "Ultra-comfortable, lightweight design" },
+        ],
+      },
+      {
+        id: "prod_5",
+        name: "Apple Watch Series 9",
+        price: { current: 429.00, original: 429.00, currency: "USD" },
+        primaryImage: "https://cartzilla-react.createx.studio/_next/image?url=%2Fimg%2Fshop%2Felectronics%2F05.png&w=750&q=75",
+        rating: { averageScore: 4.8, numReviews: 7 },
+        features: [
+          { name: "Health", details: "Advanced Health Sensors" },
+          { name: "Display", details: "Brighter Always-On Retina" },
+          { name: "Chip", details: "New S9 SiP" },
+        ],
+      },
+      {
+        id: "prod_6",
+        name: "MacBook Air M2",
+        price: { current: 1099.00, original: 1099.00, currency: "USD" },
+        primaryImage: "https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/hero/hero_macbook_air_13_15_m2__ippik8t6f82u_large.jpg",
+        rating: { averageScore: 4.9, numReviews: 45 },
+        features: [
+          { name: "Chip", details: "Apple M2 Chip" },
+          { name: "Battery", details: "Up to 18 hours" },
+          { name: "Display", details: "Liquid Retina Display" },
+        ],
+      },
+      {
+        id: "prod_7",
+        name: "Dell XPS 15 Laptop",
+        price: { current: 1499.00, original: 1699.00, currency: "USD" },
+        primaryImage: "https://cartzilla-react.createx.studio/_next/image?url=%2Fimg%2Fshop%2Felectronics%2F07.png&w=750&q=75",
+        rating: { averageScore: 4.6, numReviews: 9 },
+        features: [
+          { name: "Processor", details: "Intel Core i7" },
+          { name: "Display", details: "15.6-inch OLED 3.5K" },
+          { name: "Build", details: "Premium Aluminum Build" },
+        ],
+      },
+      {
+        id: "prod_8",
+        name: "AirPods Pro (2nd Gen)",
+        price: { current: 249.00, original: 249.00, currency: "USD" },
+        primaryImage: "https://cartzilla-react.createx.studio/_next/image?url=%2Fimg%2Fshop%2Felectronics%2F08.png&w=750&q=75",
+        rating: { averageScore: 4.7, numReviews: 14 },
+        features: [
+          { name: "Audio", details: "Active Noise Cancellation" },
+          { name: "Sound", details: "Personalized Spatial Audio" },
+          { name: "Chip", details: "H2 Apple Chip" },
+        ],
+      },
+      {
+        id: "prod_9",
+        name: "Logitech MX Master 3S Mouse",
+        price: { current: 99.00, original: 99.00, currency: "USD" },
+        primaryImage: "https://resource.logitech.com/w_692,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/gallery/mx-master-3s-mouse-gallery-1-graphite.png?v=1",
+        rating: { averageScore: 4.9, numReviews: 11 },
+        features: [
+          { name: "Scrolling", details: "MagSpeed Electromagnetic" },
+          { name: "Sensor", details: "8K DPI Optical Sensor" },
+          { name: "Ergonomics", details: "Sculpted for your hand" },
+        ],
+      },
+      {
+        id: "prod_10",
+        name: "Samsung Odyssey G9 Monitor",
+        price: { current: 1299.00, original: 1499.00, currency: "USD" },
+        primaryImage: "https://images.samsung.com/is/image/samsung/p6pim/sg/ls49cg954sexs/gallery/sg-odyssey-oled-g9-g95sc-ls49cg954sexs-536940818?$650_519_PNG$",
+        rating: { averageScore: 4.5, numReviews: 22 },
+        features: [
+          { name: "Screen", details: '49" Dual QHD Curved' },
+          { name: "Refresh Rate", details: "240Hz" },
+          { name: "Panel", details: "Quantum Mini-LED" },
+        ],
+      },
+    ],
+    status: 'idle',
+    error: null,
+  // For the DETAILS PAGE (initially empty)
+  productDetails: {
+    id: null,
+    name: null,
+    price: {},
+    primaryImage: null,
+    galleryImages: [],
+    shortDescription: null,
+    features: [],
+    rating: {},
+    stock: {},
+    specifications: [],
+    status: 'idle',
+    error: null,
+  },
+};

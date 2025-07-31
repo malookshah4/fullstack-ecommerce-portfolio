@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+
+.body-x {
+  /* background-image:  linear-gradient(to bottom, #ffffff, #aaa9a9); */
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.header-x {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgb(19, 19, 19);
+  padding: 0rem 0;
+}
+
+.header-x .d-flex {
+  min-height: 50px; /* Set a minimum height for alignment */
+}
+
+.action-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* Space between icons */
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  padding: 0.3rem;
+  cursor: pointer;
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.icon-btn:hover {
+  background-color: #f3f4f689;
+  color: #111827;
+}
+
+.icon-btn svg {
+  width: 12px;
+  height: 12px;
+}
+.header-x a p {
+  font-family: "Saira", sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.header-x nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0px 20px;
+}
+
+.header-x .nav-link {
+  font-family: "Saira", sans-serif;
+  padding: 0px 15px;
+  font-size: 0.7rem;
+  color: #ffffff;
+
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.header-x .nav-link:hover {
+  color: #acacac;
+  transform: translateY(-2px);
+}
+.suggested-items-title {
+  font-family: "Saira", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 2rem;
+}
+
+.wrapper-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-area {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.wrapper-container {
+  /* This holds the main content of your page */
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto; /* Centers the container */
+  padding: 2rem 0;
+}
+
+.suggested-items-title {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.content-area {
+  /* This is the key part that creates the grid */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 2rem; /* The space between your cards */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 992px) {
+  .content-area {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .content-area {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
+
+/* Define color variables for your themes */
+:root {
+  /* Dark Theme (Default) */
+  --header-bg: rgb(19, 19, 19);
+  --header-text: #ffffff;
+  --header-link: #ffffff;
+  --header-link-hover: #acacac;
+  --header-icon: #ffffff;
+  --header-icon-hover-bg: rgba(243, 244, 246, 0.2);
+
+  /* Light Theme Variables */
+  --header-bg-light: #ffffff;
+  --header-text-light: #111827;
+  --header-link-light: #4b5563;
+  --header-link-hover-light: #3b82f6;
+  --header-icon-light: #4b5563;
+  --header-icon-hover-bg-light: #f3f4f6;
+}
+
+/* When the body has the 'light' class, swap the variables */
+body.light {
+  --header-bg: var(--header-bg-light);
+  --header-text: var(--header-text-light);
+  --header-link: var(--header-link-light);
+  --header-link-hover: var(--header-link-hover-light);
+  --header-icon: var(--header-icon-light);
+  --header-icon-hover-bg: var(--header-icon-hover-bg-light);
+}
+
+/* Add a smooth transition for color changes */
+.header-x, .header-x a, .icon-btn, .header-x p {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
